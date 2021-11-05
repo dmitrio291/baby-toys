@@ -1,0 +1,55 @@
+.products-border-line-slider {
+    &__header {
+        align-items: center;
+        display: flex;
+        margin-bottom: 20px;
+
+        .title-section {
+            margin-bottom: 0;
+        }
+    }
+
+    &__navigation {
+        display: flex;
+        margin-left: auto;
+    }
+
+    .product-prev {
+        margin: 0 15px;
+
+        &:hover {
+            &:hover {
+                box-shadow: none
+            }
+        }
+    }
+
+    &__btn {
+        @include size(40px);
+        align-items: center;
+        border: 1px solid $alto;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+
+        &.products-border-line-slider__btn {
+            &--prev {
+                border-radius: 2px 0 0 2px;
+                border-right: 0;
+            }
+
+            &--next {
+                border-radius: 0 2px 2px 0;
+            }
+        }
+    }
+
+    &__icon {
+        @include size(15px);
+        fill: $blaze-orange;
+    }
+
+    &__body {
+        margin: 0 -15px;
+    }
+}

@@ -1,0 +1,87 @@
+.btn {
+    background-color: $white;
+    border: 1px solid $blaze-orange;
+    border-radius: 4px;
+    color: $blaze-orange;
+    cursor: pointer;
+    display: block;
+    font-weight: 600;
+    line-height: 38px;
+    height: 40px;
+    text-align: center;
+    padding: 0 20px;
+    transition: all linear 0.3s;
+    white-space: nowrap;
+    width: 100%;
+
+    &:hover {
+        background-color: $blaze-orange;
+        color: $white;
+    }
+
+    &.btn {
+        &--transparent {
+            &-white {
+                border-color: $white;
+                background-color: transparent;
+                color: $white;
+
+                &:hover {
+                    background-color: $white;
+                    color: $tundora;
+                }
+            }
+
+            &-gray {
+                background-color: transparent;
+                border-color: rgba(38, 38, 38, 0.15);
+                color: $oslo-gray;
+
+                &:hover {
+                    background-color: rgba(38, 38, 38, 0.15);
+                    color: $white;
+                }
+            }
+        }
+
+        &--bg {
+            &-orange {
+                color: $white;
+                background-color: $blaze-orange;
+            }
+        }
+
+        &--contour {
+            &-gray {
+                border: 2px solid $alto;
+                color: $tundora;
+                line-height: 36px;
+
+                &:hover {
+                    background-color: $alto;
+                    color: $white;
+                }
+            }
+        }
+
+        &--round {
+            border-radius: 20px;
+        }
+
+        &--inline {
+            display: inline-block;
+            width: auto;
+        }
+
+        &--small {
+            line-height: 28px;
+            height: 30px;
+            padding: 0 15px;
+        }
+
+        &--big {
+            line-height: 48px;
+            height: 50px;
+        }
+    }
+}
